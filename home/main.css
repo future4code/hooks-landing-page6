@@ -5,7 +5,7 @@
 
 /*HEADER*/
 
-header {
+.container {
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -48,8 +48,53 @@ nav {
     margin-top: 20px;
 }
 
-/*MAIN*/
+button {
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin-left: 32px;
+    margin-top: 20px;
+    background-color: #51260E;
+    color: #f4f4f4;
+    cursor: pointer;
+}
 
+/*MAIN*/
+.container-main {
+    position: absolute;
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    margin-left: 350px;
+}
+
+#div-texto-inicial {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-top: 10px;
+    color: #51260E;
+}
+
+#txtBusca {
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:15px;
+    border:none;
+    height:32px;
+    width:400px;
+}
+
+#bttBusca{
+    border: none;
+    padding: 5px 10px 5px 10px;
+    margin-left: 32px;
+    margin-top: 20px;
+    color: #f4f4f4;
+    cursor: pointer;
+}
 
 /*FOOTER*/
 footer {
@@ -61,24 +106,8 @@ footer {
 
 .foot {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    align-items: flex-start ;
-}
-
-.imagem {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    align-items: flex-end ;
-    float: left;
-}
-
-p {
-    color: #51260E;
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+    justify-items:baseline;
+    align-items: center;
 }
