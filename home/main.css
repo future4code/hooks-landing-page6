@@ -98,16 +98,16 @@ button {
 
 /*FOOTER*/
 footer {
-    position:absolute;
-	bottom:0;
-    color: #51260E;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
     padding: 9px;
 }
 
-.foot {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    justify-items:baseline;
-    align-items: center;
+footer p {
+    color: #51260E;
 }
