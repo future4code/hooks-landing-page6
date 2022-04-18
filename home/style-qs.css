@@ -66,3 +66,15 @@ background-color: #7f3c39;
     text-align: center;
 
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .imagens{
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        padding: 20px 0;
+    }
+   img{
+    max-width:200px;
+    max-height:150px;
+   }
+}

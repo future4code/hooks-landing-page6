@@ -111,3 +111,34 @@ footer {
 footer p {
     color: #51260E;
 }
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        background-color: #51260E;
+        position: fixed;
+        width: 100%;
+        padding: 10px;
+    }
+
+    main {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        font-size: xx-large;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size:x-large;
+    }
+
+}
+
